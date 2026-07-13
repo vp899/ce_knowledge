@@ -1,4 +1,15 @@
-# 08 - 产品提案
+---
+title: "产品提案"
+aliases:
+  - "提案模块总览"
+tags:
+  - proposal
+  - index
+module: "08-proposal"
+status: active
+---
+
+# 08 - [[proposal-template|产品提案]]
 
 ## 模块概述
 
@@ -137,3 +148,9 @@
                       │
                  替代品威胁
 ```
+---
+
+## 相关链接
+
+- [[risk-management|风险评估]]
+- [[marketing-strategy|市场宣传]]

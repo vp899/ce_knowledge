@@ -1,3 +1,16 @@
+---
+title: "Android 构建系统"
+aliases:
+  - "Soong 构建"
+tags:
+  - android
+  - soong
+  - ota
+  - treble
+module: "01-android"
+status: active
+---
+
 # Android 构建系统
 
 ## 1. Soong (Blueprint) 构建系统
@@ -208,7 +221,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 BOARD_SEPOLICY_DIRS += device/<vendor>/<product>/sepolicy
 ```
 
-## 3. OTA 升级
+## 3. [[firmware-upgrade|OTA]] 升级
 
 ### OTA 包生成
 ```bash
@@ -352,3 +365,10 @@ make vendorimage -j$(nproc)
     </hal>
 </manifest>
 ```
+---
+
+## 相关链接
+
+- [[linux-driver-dev|Linux 驱动]]
+- [[secure-boot-impl|安全启动]]
+- [[firmware-upgrade|固件升级]]

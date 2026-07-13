@@ -1,3 +1,16 @@
+---
+title: "Android 系统层开发"
+aliases:
+  - "系统层"
+tags:
+  - android
+  - init
+  - native
+  - selinux
+module: "01-android"
+status: active
+---
+
 # Android 系统层开发
 
 ## 1. Init 系统
@@ -348,3 +361,10 @@ static bool isVerboseEnabled() {
 #define MY_LOGV(fmt, ...) \
     do { if (isVerboseEnabled()) ALOGV(fmt, ##__VA_ARGS__); } while(0)
 ```
+---
+
+## 相关链接
+
+- [[linux-driver-dev|Linux 驱动]]
+- [[secure-boot-impl|安全启动]]
+- [[firmware-upgrade|固件升级]]

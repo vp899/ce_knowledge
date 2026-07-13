@@ -1,3 +1,19 @@
+---
+title: "IMU（惯性测量单元）"
+aliases:
+  - "惯性测量"
+  - "姿态融合"
+tags:
+  - imu
+  - sensor
+  - mahony
+  - ekf
+  - vibration
+  - calibration
+module: "20-imu"
+status: active
+---
+
 # IMU（惯性测量单元）
 
 ## 1. IMU 传感器选型
@@ -458,3 +474,10 @@ void dynamic_notch_update(DynamicNotchFilter *dnf, float sample) {
 ├── 避免线缆刚性连接 (使用软线)
 └── 避免共振频率匹配
 ```
+---
+
+## 相关链接
+
+- [[compass-system|指南针]]
+- [[flight-controller-firmware|飞控]]
+- [[gimbal-control|云台]]

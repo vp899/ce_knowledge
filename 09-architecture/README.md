@@ -1,4 +1,15 @@
-# 09 - 架构设计
+---
+title: "架构设计"
+aliases:
+  - "架构模块总览"
+tags:
+  - architecture
+  - index
+module: "09-architecture"
+status: active
+---
+
+# 09 - [[architecture-template|架构设计]]
 
 ## 模块概述
 
@@ -115,3 +126,9 @@ Layer 0: Hardware       (SoC、外设、传感器)
 | 中介者 | 模块解耦 | 消息中心、事件总线 |
 | 策略 | 算法切换 | 函数指针、接口抽象 |
 | 命令 | 操作队列 | 命令模式、任务队列 |
+---
+
+## 相关链接
+
+- [[proposal-template|产品提案]]
+- [[flight-controller-firmware|飞控架构]]

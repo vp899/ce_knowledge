@@ -1,3 +1,16 @@
+---
+title: "可靠性测试标准"
+aliases:
+  - "环境测试"
+tags:
+  - reliability
+  - environmental
+  - emc
+  - temperature
+module: "07-reliability"
+status: active
+---
+
 # 可靠性测试标准
 
 ## 1. 环境测试详解
@@ -239,7 +252,7 @@ ESD 超标整改:
 
 ## 3. 机械测试
 
-### 跌落测试规范
+### [[mechanical-testing|跌落测试]]规范
 ```
 IEC 60068-2-31 跌落测试:
 
@@ -319,7 +332,7 @@ IPX7 防水测试 (短时浸水):
 
 ## 5. 可靠性指标计算
 
-### MTBF 计算方法
+### [[mechanical-testing|MTBF]] 计算方法
 ```python
 #!/usr/bin/env python3
 """MTBF 计算工具"""
@@ -454,3 +467,9 @@ if __name__ == '__main__':
 经过可靠性测试，产品 ___ 项测试中 ___ 项 PASS，___ 项 FAIL。
 整改后复测全部 PASS，产品可靠性满足设计要求。
 ```
+---
+
+## 相关链接
+
+- [[schematic-design|原理图设计]]
+- [[dev-process|项目管理]]

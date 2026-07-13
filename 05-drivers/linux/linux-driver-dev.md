@@ -1,3 +1,17 @@
+---
+title: "Linux 驱动开发"
+aliases:
+  - "Linux 驱动"
+tags:
+  - drivers
+  - linux
+  - v4l2
+  - i2c
+  - platform
+module: "05-drivers"
+status: active
+---
+
 # Linux 驱动开发
 
 ## 1. 字符设备驱动
@@ -706,3 +720,9 @@ static void __exit kprobe_exit(void) {
     unregister_kprobe(&kp);
 }
 ```
+---
+
+## 相关链接
+
+- [[framework-customization|Android Framework]]
+- [[protocol-details|通信协议]]

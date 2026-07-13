@@ -1,3 +1,15 @@
+---
+title: "产品风险评估与管理"
+aliases:
+  - "风险评估"
+tags:
+  - risk
+  - assessment
+  - mitigation
+module: "10-risk"
+status: active
+---
+
 # 产品风险评估与管理
 
 ## 1. 风险识别框架
@@ -146,7 +158,7 @@
 - 寻求芯片厂商技术支持
 ```
 
-#### 风险: EMC 测试不通过
+#### 风险: [[env-testing|EMC]] 测试不通过
 ```markdown
 ## 风险分析
 
@@ -322,3 +334,9 @@
 □ 资源是否充足
 □ 沟通是否顺畅
 ```
+---
+
+## 相关链接
+
+- [[dev-process|项目管理]]
+- [[proposal-template|产品提案]]

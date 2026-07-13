@@ -1,3 +1,16 @@
+---
+title: "项目管理流程"
+aliases:
+  - "开发流程"
+tags:
+  - project-management
+  - agile
+  - stage-gate
+  - quality
+module: "11-project-management"
+status: active
+---
+
 # 项目管理流程
 
 ## 1. 消费电子开发全流程
@@ -378,3 +391,9 @@ Bug 报告 → 分配 → 处理 → 验证 → 关闭
 ## 需要决策/支持
 - ___
 ```
+---
+
+## 相关链接
+
+- [[risk-management|风险评估]]
+- [[architecture-template|架构设计]]

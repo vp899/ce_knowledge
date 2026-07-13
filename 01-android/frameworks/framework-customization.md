@@ -1,3 +1,16 @@
+---
+title: "Android Framework 定制开发"
+aliases:
+  - "Framework 定制"
+tags:
+  - android
+  - framework
+  - system-server
+  - hal
+module: "01-android"
+status: active
+---
+
 # Android Framework 定制开发
 
 ## 1. AOSP 源码结构
@@ -463,3 +476,10 @@ EOF
 adb push /tmp/config.pbtx /data/local/tmp/
 adb shell perfetto -c /data/local/tmp/config.pbtx -o /data/local/tmp/trace.perfetto
 ```
+---
+
+## 相关链接
+
+- [[linux-driver-dev|Linux 驱动]]
+- [[secure-boot-impl|安全启动]]
+- [[firmware-upgrade|固件升级]]

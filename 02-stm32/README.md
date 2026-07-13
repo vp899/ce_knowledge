@@ -1,8 +1,19 @@
+---
+title: "STM32 升级"
+aliases:
+  - "STM32 模块总览"
+tags:
+  - stm32
+  - index
+module: "02-stm32"
+status: active
+---
+
 # 02 - STM32 升级
 
 ## 模块概述
 
-STM32 微控制器固件升级方案设计、Bootloader 开发、OTA 实现。
+STM32 微控制器[[firmware-upgrade|固件升级]]方案设计、[[bootloader-design|Bootloader]] 开发、[[firmware-upgrade|OTA]] 实现。
 
 ## 目录结构
 
@@ -23,7 +34,7 @@ STM32 微控制器固件升级方案设计、Bootloader 开发、OTA 实现。
 |------|------|------|----------|
 | UART 串口 | 简单可靠 | 速度慢、需连线 | 开发调试、产线 |
 | USB DFU | 速度快 | 需 USB 连接 | 产线烧录 |
-| OTA (BLE/WiFi) | 无线便捷 | 复杂度高 | 量产产品 |
+| OTA ([[protocol-details|BLE]]/WiFi) | 无线便捷 | 复杂度高 | 量产产品 |
 | SD 卡 | 无需连接 | 用户操作 | 离线升级 |
 | A/B 分区 | 无缝回滚 | Flash 占用大 | 高可靠性产品 |
 
@@ -44,7 +55,7 @@ STM32 微控制器固件升级方案设计、Bootloader 开发、OTA 实现。
 
 ### 2. Bootloader 设计
 - 启动流程：Boot0 → Bootloader → Application
-- Flash 分区布局设计
+- [[bootloader-design|Flash 分区]]布局设计
 - 固件完整性校验（CRC32、SHA256、RSA 签名）
 - 回滚机制与看门狗保护
 - 双 Bank 升级（STM32L4/H7 支持）
@@ -84,3 +95,10 @@ STM32 微控制器固件升级方案设计、Bootloader 开发、OTA 实现。
 - **I2C**：EEPROM、RTC、传感器
 - **CAN**：汽车电子、工业控制
 - **USB**：HID、CDC、MSC、DFU
+---
+
+## 相关链接
+
+- [[secure-boot-impl|安全启动]]
+- [[key-mgmt|密钥管理]]
+- [[esc-control|ESC 控制]]

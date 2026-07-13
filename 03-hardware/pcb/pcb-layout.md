@@ -1,3 +1,16 @@
+---
+title: "PCB Layout 设计"
+aliases:
+  - "PCB 设计"
+tags:
+  - hardware
+  - pcb
+  - layout
+  - emc
+module: "03-hardware"
+status: active
+---
+
 # PCB Layout 设计
 
 ## 1. 叠层设计
@@ -269,3 +282,9 @@ DC-DC IC 散热:
 7. 丝印线宽 ≥ 0.15mm
 8. 丝印字高 ≥ 0.8mm
 ```
+---
+
+## 相关链接
+
+- [[env-testing|可靠性测试]]
+- [[pcba-process|PCBA 制造]]

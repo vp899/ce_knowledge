@@ -1,3 +1,16 @@
+---
+title: "市场宣传策略"
+aliases:
+  - "营销策略"
+tags:
+  - marketing
+  - brand
+  - content
+  - channels
+module: "12-marketing"
+status: active
+---
+
 # 市场宣传策略
 
 ## 1. 品牌定位框架
@@ -337,3 +350,9 @@ B站:
 1. ___
 2. ___
 ```
+---
+
+## 相关链接
+
+- [[proposal-template|产品提案]]
+- [[web-dev|产品网站]]

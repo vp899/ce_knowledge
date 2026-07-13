@@ -1,3 +1,17 @@
+---
+title: "GPS / GNSS 定位系统"
+aliases:
+  - "GNSS"
+  - "RTK 定位"
+tags:
+  - gps
+  - gnss
+  - rtk
+  - navigation
+module: "21-gps"
+status: active
+---
+
 # GPS / GNSS 定位系统
 
 ## 1. GNSS 接收机选型
@@ -361,3 +375,9 @@ void handle_gps_outage(NavigationState *nav, uint32_t current_time) {
     }
 }
 ```
+---
+
+## 相关链接
+
+- [[imu-system|IMU]]
+- [[flight-controller-firmware|飞控]]

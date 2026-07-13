@@ -1,3 +1,17 @@
+---
+title: "动力电调 (ESC)"
+aliases:
+  - "ESC 控制"
+  - "无刷电调"
+tags:
+  - esc
+  - bldc
+  - foc
+  - dshot
+module: "22-esc"
+status: active
+---
+
 # 动力电调 (ESC)
 
 ## 1. 无刷电机原理
@@ -227,7 +241,7 @@ H = 高侧导通, L = 低侧导通, Z = 悬空 (检测反电动势)
 3. 切换: 速度足够后切换到闭环
 ```
 
-### FOC 控制 (详细)
+### [[gimbal-control|FOC]] 控制 (详细)
 ```c
 /* esc_foc.c */
 
@@ -351,3 +365,9 @@ void field_weakening(FOC_State *foc, float speed_ref) {
 ├── 动作: 重新启动或降速
 └── 恢复: 自动重新同步
 ```
+---
+
+## 相关链接
+
+- [[flight-controller-firmware|飞控]]
+- [[gimbal-control|云台]]

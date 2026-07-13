@@ -1,3 +1,14 @@
+---
+title: "通信协议"
+aliases:
+  - "通信模块总览"
+tags:
+  - communication
+  - index
+module: "06-communication"
+status: active
+---
+
 # 06 - 通信协议
 
 ## 模块概述
@@ -59,13 +70,13 @@ Application (GATT Profile)
 | CAN | 1Mbps | 2 | 1km | 汽车/工业 |
 | RS-485 | 10Mbps | 2 | 1.2km | 工业总线 |
 | MIPI DSI | 4Gbps | 差分 | 板级 | 显示 |
-| MIPI CSI | 2.5Gbps | 差分 | 板级 | 摄像头 |
+| [[camera-sensor|MIPI CSI]] | 2.5Gbps | 差分 | 板级 | 摄像头 |
 
 ### 3. 应用层协议
 
 | 协议 | 传输 | 特点 | 适用 |
 |------|------|------|------|
-| MQTT | TCP | 轻量发布订阅 | IoT |
+| [[protocol-details|MQTT]] | TCP | 轻量发布订阅 | IoT |
 | CoAP | UDP | RESTful、低功耗 | 受限设备 |
 | HTTP/HTTPS | TCP | 通用 | Web 服务 |
 | WebSocket | TCP | 全双工、持久 | 实时推送 |
@@ -108,3 +119,9 @@ Application (GATT Profile)
 ### 结论
 选择方案 ___，理由: ___
 ```
+---
+
+## 相关链接
+
+- [[linux-driver-dev|Linux 驱动]]
+- [[video-transmission|图传系统]]

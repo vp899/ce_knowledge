@@ -1,3 +1,19 @@
+---
+title: "图像传感器"
+aliases:
+  - "CMOS Sensor"
+  - "图像传感器"
+tags:
+  - camera
+  - sensor
+  - imx
+  - isp
+  - mipi
+  - v4l2
+module: "14-camera"
+status: active
+---
+
 # 图像传感器 (CMOS Sensor)
 
 ## 1. 传感器选型
@@ -681,3 +697,10 @@ AE 收敛时间目标: < 3 帧
 2. 直接移动镜头到对应位置
 3. 速度最快
 ```
+---
+
+## 相关链接
+
+- [[video-transmission|图传系统]]
+- [[gimbal-control|云台系统]]
+- [[linux-driver-dev|Linux 驱动]]

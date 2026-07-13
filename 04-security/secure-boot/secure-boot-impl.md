@@ -1,3 +1,16 @@
+---
+title: "安全启动实现"
+aliases:
+  - "Secure Boot"
+tags:
+  - security
+  - secure-boot
+  - rsa
+  - trust-chain
+module: "04-security"
+status: active
+---
+
 # 安全启动实现
 
 ## 1. 安全启动信任链
@@ -178,7 +191,7 @@ int verify_app_header(uint32_t app_addr) {
 }
 ```
 
-## 3. 密钥管理
+## 3. [[key-mgmt|密钥管理]]
 
 ### 密钥生成脚本
 ```bash
@@ -380,3 +393,9 @@ void test_anti_rollback(void) {
     assert(verify_firmware_version(5) != 0);    // 拒绝回滚
 }
 ```
+---
+
+## 相关链接
+
+- [[bootloader-design|Bootloader]]
+- [[android-security|Android 安全]]

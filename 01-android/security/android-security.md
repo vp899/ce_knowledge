@@ -1,3 +1,16 @@
+---
+title: "Android 安全机制"
+aliases:
+  - "Android 安全"
+tags:
+  - android
+  - security
+  - selinux
+  - keymaster
+module: "01-android"
+status: active
+---
+
 # Android 安全机制
 
 ## 1. 签名体系
@@ -271,3 +284,10 @@ public void onRequestPermissionsResult(int requestCode,
 - [ ] 禁止日志输出敏感信息
 - [ ] 使用 FLAG_SECURE 防止截屏
 - [ ] Root 检测与完整性校验
+---
+
+## 相关链接
+
+- [[linux-driver-dev|Linux 驱动]]
+- [[secure-boot-impl|安全启动]]
+- [[firmware-upgrade|固件升级]]

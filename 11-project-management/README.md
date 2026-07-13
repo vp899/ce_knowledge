@@ -1,4 +1,15 @@
-# 11 - 项目管理
+---
+title: "项目管理"
+aliases:
+  - "项目管理模块总览"
+tags:
+  - project-management
+  - index
+module: "11-project-management"
+status: active
+---
+
+# 11 - [[dev-process|项目管理]]
 
 ## 模块概述
 
@@ -31,7 +42,7 @@ PoC   EVT    DVT    PVT    PP    MP
 |------|------|--------|----------|
 | 概念验证 | PoC | 可行性报告 | 技术验证、市场调研 |
 | 工程样机 | EVT | 功能样机 | 功能开发、驱动调试 |
-| 设计验证 | DVT | 设计定型 | 可靠性测试、EMC |
+| 设计验证 | DVT | 设计定型 | 可靠性测试、[[env-testing|EMC]] |
 | 生产验证 | PVT | 生产文件 | 产线验证、良率提升 |
 | 试产 | PP | 小批量产品 | 工艺优化、质量确认 |
 | 量产 | MP | 量产产品 | 持续改进、成本优化 |
@@ -102,7 +113,7 @@ Backlog → To Do → In Progress → Code Review → Testing → Done
 | 设计评审 | 设计完成后 | 架构合理性、接口定义 |
 | 代码评审 | 提交时 | 代码质量、安全、性能 |
 | 测试评审 | 测试完成后 | 覆盖率、Bug 收敛 |
-| 发布评审 | 发布前 | 质量标准、风险评估 |
+| 发布评审 | 发布前 | 质量标准、[[risk-management|风险评估]] |
 
 ## 工具选型
 
@@ -116,3 +127,9 @@ Backlog → To Do → In Progress → Code Review → Testing → Done
 | Figma | 设计协作 | 实时协作、原型 |
 | Slack | 即时通讯 | 集成丰富 |
 | 飞书 | 全套协作 | 国产、集成度高 |
+---
+
+## 相关链接
+
+- [[risk-management|风险评估]]
+- [[architecture-template|架构设计]]

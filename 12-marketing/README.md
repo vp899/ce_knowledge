@@ -1,3 +1,14 @@
+---
+title: "市场宣传"
+aliases:
+  - "市场模块总览"
+tags:
+  - marketing
+  - index
+module: "12-marketing"
+status: active
+---
+
 # 12 - 市场宣传
 
 ## 模块概述
@@ -129,3 +140,9 @@
 | 转化率 | 购买/访问 | >2% |
 | CAC | 获客成本 | 行业平均 50% |
 | NPS | 净推荐值 | >50 |
+---
+
+## 相关链接
+
+- [[proposal-template|产品提案]]
+- [[web-dev|产品网站]]

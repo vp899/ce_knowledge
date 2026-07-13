@@ -1,3 +1,14 @@
+---
+title: "驱动开发"
+aliases:
+  - "驱动模块总览"
+tags:
+  - drivers
+  - index
+module: "05-drivers"
+status: active
+---
+
 # 05 - 驱动开发
 
 ## 模块概述
@@ -44,7 +55,7 @@
 |------|--------|------|
 | 字符设备 | misc / char | GPIO、LED、按键 |
 | 块设备 | block | eMMC、Flash、SD |
-| 网络设备 | net | WiFi、以太网、BLE |
+| 网络设备 | net | WiFi、以太网、[[protocol-details|BLE]] |
 | 输入设备 | input | 触摸屏、键盘、传感器 |
 | 显示设备 | drm / fb | LCD、HDMI、MIPI DSI |
 | 音频设备 | alsa / asoc | Codec、I2S、DMIC |
@@ -115,3 +126,9 @@ cat /sys/kernel/debug/gpio                   # GPIO 状态
 i2cdetect -y 1                              # I2C 设备扫描
 devmem2 0x48000000 w                        # 寄存器读取
 ```
+---
+
+## 相关链接
+
+- [[framework-customization|Android Framework]]
+- [[protocol-details|通信协议]]

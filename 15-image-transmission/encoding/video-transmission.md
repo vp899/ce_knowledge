@@ -1,3 +1,18 @@
+---
+title: "图传系统（视频传输链路）"
+aliases:
+  - "视频传输"
+  - "图传链路"
+tags:
+  - image-transmission
+  - h264
+  - h265
+  - fec
+  - antenna
+module: "15-image-transmission"
+status: active
+---
+
 # 图传系统（视频传输链路）
 
 ## 1. 视频编码
@@ -321,3 +336,9 @@ void adaptive_rate_update(AdaptiveRateCtrl *ctrl,
 ├── 解码: 硬件解码器，零拷贝显示
 └── 整体: 减少每个环节的缓冲
 ```
+---
+
+## 相关链接
+
+- [[camera-sensor|相机系统]]
+- [[protocol-details|通信协议]]

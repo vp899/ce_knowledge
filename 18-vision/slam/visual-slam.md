@@ -1,3 +1,18 @@
+---
+title: "视觉系统"
+aliases:
+  - "视觉 SLAM"
+  - "避障"
+tags:
+  - vision
+  - slam
+  - obstacle-avoidance
+  - tracking
+  - depth
+module: "18-vision"
+status: active
+---
+
 # 视觉系统
 
 ## 1. 视觉 SLAM
@@ -95,7 +110,7 @@ d = 视差 (像素)
 | 结构光 | 0.2-10m | 0.5% | 60° | 30fps | 中 | 高 | 精细建图 |
 | 超声波 | 0.02-5m | 3% | 30° | 10Hz | 低 | 低 | 近距测距 |
 | 毫米波雷达 | 0.5-200m | 5% | 120° | 20Hz | 中 | 中 | 全天候 |
-| LiDAR | 0.3-200m | 2cm | 360° | 10Hz | 高 | 高 | 精确建图 |
+| [[lidar-system|LiDAR]] | 0.3-200m | 2cm | 360° | 10Hz | 高 | 高 | 精确建图 |
 
 ### 双目避障算法
 ```c
@@ -253,7 +268,7 @@ AvoidanceAction plan_avoidance(const Obstacle *obstacles,
     └── ~30fps (GPU)
 ```
 
-### 云台跟踪控制
+### [[gimbal-control|云台]]跟踪控制
 ```c
 /* gimbal_tracking.c */
 
@@ -321,3 +336,10 @@ void gimbal_tracking_update(TrackingState *ts,
 ├── IMU 提供尺度信息
 └── 绝对深度估计
 ```
+---
+
+## 相关链接
+
+- [[camera-sensor|相机系统]]
+- [[lidar-system|激光雷达]]
+- [[imu-system|IMU]]

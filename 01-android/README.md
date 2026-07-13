@@ -1,3 +1,14 @@
+---
+title: "Android 开发"
+aliases:
+  - "Android 模块总览"
+tags:
+  - android
+  - index
+module: "01-android"
+status: active
+---
+
 # 01 - Android 开发
 
 ## 模块概述
@@ -46,9 +57,9 @@
 
 ### 5. 安全
 - SELinux 策略配置
-- 签名体系（platform、media、shared、testkey）
-- Keymaster / Keymint HAL
-- Verified Boot (dm-verity)
+- [[android-security|签名体系]]（platform、media、shared、testkey）
+- [[android-security|Keymaster]] / Keymint HAL
+- Verified Boot ([[android-security|dm-verity]])
 - 权限管理与隐私保护
 
 ## 关键工具链
@@ -67,3 +78,10 @@
 - [AOSP 官方文档](https://source.android.com/)
 - [Android CDD (Compatibility Definition)](https://source.android.com/docs/compatibility/cdd)
 - [Treble 架构](https://source.android.com/docs/core/architecture)
+---
+
+## 相关链接
+
+- [[linux-driver-dev|Linux 驱动]]
+- [[secure-boot-impl|安全启动]]
+- [[firmware-upgrade|固件升级]]

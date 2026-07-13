@@ -1,3 +1,16 @@
+---
+title: "产品提案模板"
+aliases:
+  - "提案模板"
+tags:
+  - proposal
+  - template
+  - market
+  - business
+module: "08-proposal"
+status: active
+---
+
 # 产品提案模板
 
 ## 1. 完整产品提案书
@@ -348,3 +361,9 @@
 □ 管理层支持
 □ 执行力强
 ```
+---
+
+## 相关链接
+
+- [[risk-management|风险评估]]
+- [[marketing-strategy|市场宣传]]

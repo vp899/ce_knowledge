@@ -1,3 +1,16 @@
+---
+title: "硬件原理图设计"
+aliases:
+  - "原理图设计"
+tags:
+  - hardware
+  - schematic
+  - power
+  - esd
+module: "03-hardware"
+status: active
+---
+
 # 硬件原理图设计
 
 ## 1. 电源系统设计
@@ -287,3 +300,9 @@ GPIO ── [R_gate 100R] ── MOSFET (G)
 增益: G = -R_f / R1 (反相放大)
 偏置: V_out = V_ref * (1 + R_f/R1) - V_in * (R_f/R1)
 ```
+---
+
+## 相关链接
+
+- [[env-testing|可靠性测试]]
+- [[pcba-process|PCBA 制造]]

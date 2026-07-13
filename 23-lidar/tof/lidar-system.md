@@ -1,3 +1,17 @@
+---
+title: "激光雷达 (LiDAR)"
+aliases:
+  - "激光雷达"
+  - "LiDAR 测距"
+tags:
+  - lidar
+  - tof
+  - slam
+  - point-cloud
+module: "23-lidar"
+status: active
+---
+
 # 激光雷达 (LiDAR)
 
 ## 1. 测距原理
@@ -308,7 +322,7 @@ void statistical_outlier_removal(PointCloud *input, PointCloud *output,
 }
 ```
 
-## 4. SLAM 建图
+## 4. [[visual-slam|SLAM]] 建图
 
 ### LiDAR SLAM 算法
 ```
@@ -482,3 +496,9 @@ int lidar_ethernet_init(LidarDriver *drv, const char *ip, int port) {
     return 0;
 }
 ```
+---
+
+## 相关链接
+
+- [[visual-slam|视觉系统]]
+- [[imu-system|IMU]]

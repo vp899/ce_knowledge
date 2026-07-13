@@ -1,3 +1,16 @@
+---
+title: "RTOS 驱动开发"
+aliases:
+  - "RTOS 驱动"
+tags:
+  - drivers
+  - rtos
+  - freertos
+  - rt-thread
+module: "05-drivers"
+status: active
+---
+
 # RTOS 驱动开发
 
 ## 1. FreeRTOS 驱动框架
@@ -433,7 +446,7 @@ float adc_to_voltage(uint16_t adc_value, float vref) {
 }
 ```
 
-### PWM 驱动
+### [[esc-control|PWM]] 驱动
 ```c
 /* pwm_driver.c */
 
@@ -477,3 +490,9 @@ void pwm_set_duty(TIM_HandleTypeDef *htim, uint32_t channel,
     __HAL_TIM_SET_COMPARE(htim, channel, pulse);
 }
 ```
+---
+
+## 相关链接
+
+- [[framework-customization|Android Framework]]
+- [[protocol-details|通信协议]]

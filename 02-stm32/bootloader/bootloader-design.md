@@ -1,3 +1,15 @@
+---
+title: "STM32 Bootloader 开发"
+aliases:
+  - "Bootloader"
+tags:
+  - stm32
+  - bootloader
+  - flash
+module: "02-stm32"
+status: active
+---
+
 # STM32 Bootloader 开发
 
 ## 1. 启动模式
@@ -564,3 +576,10 @@ void main_loop(void) {
     }
 }
 ```
+---
+
+## 相关链接
+
+- [[secure-boot-impl|安全启动]]
+- [[key-mgmt|密钥管理]]
+- [[esc-control|ESC 控制]]

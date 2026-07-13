@@ -1,3 +1,16 @@
+---
+title: "密钥管理"
+aliases:
+  - "密钥生命周期"
+tags:
+  - security
+  - key-management
+  - hsm
+  - efuse
+module: "04-security"
+status: active
+---
+
 # 密钥管理
 
 ## 1. 密钥生命周期
@@ -526,3 +539,9 @@ int destroy_key(KeyStore_t *store, uint8_t version) {
 □ 验证擦除结果
 □ 记录销毁日志
 ```
+---
+
+## 相关链接
+
+- [[bootloader-design|Bootloader]]
+- [[android-security|Android 安全]]

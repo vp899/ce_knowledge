@@ -1,10 +1,25 @@
+---
+title: "飞控系统"
+aliases:
+  - "飞控固件"
+  - "飞控算法"
+tags:
+  - flight-controller
+  - pid
+  - ekf
+  - failsafe
+  - rtl
+module: "16-flight-controller"
+status: active
+---
+
 # 飞控系统
 
 ## 1. 飞控硬件设计
 
 ### 飞控主控芯片选型
 
-| 芯片 | 厂商 | 主频 | RAM | Flash | PWM | ADC | 特点 | 典型飞控 |
+| 芯片 | 厂商 | 主频 | RAM | Flash | [[esc-control|PWM]] | ADC | 特点 | 典型飞控 |
 |------|------|------|-----|-------|-----|-----|------|----------|
 | STM32F405 | ST | 168MHz | 192K | 1M | 14 | 16 | 经典选择 | Pixhawk 1 |
 | STM32F765 | ST | 216MHz | 512K | 2M | 18 | 24 | 高性能 | Pixhawk 4 |
@@ -426,3 +441,12 @@ bool check_geofence(GeofenceConfig *fence,
    ├── 记录日志
    └── 解锁保护
 ```
+---
+
+## 相关链接
+
+- [[imu-system|IMU]]
+- [[gps-system|GPS]]
+- [[compass-system|指南针]]
+- [[esc-control|ESC]]
+- [[gimbal-control|云台]]

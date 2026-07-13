@@ -1,3 +1,17 @@
+---
+title: "指南针（磁力计）"
+aliases:
+  - "磁力计"
+  - "电子罗盘"
+tags:
+  - compass
+  - magnetometer
+  - calibration
+  - heading
+module: "19-compass"
+status: active
+---
+
 # 指南针（磁力计）
 
 ## 1. 磁力计传感器
@@ -314,3 +328,9 @@ bool check_magnetic_interference(InterferenceDetector *det,
 □ 安装方向与飞控一致
 □ 飞行前完成校准
 ```
+---
+
+## 相关链接
+
+- [[imu-system|IMU]]
+- [[flight-controller-firmware|飞控]]

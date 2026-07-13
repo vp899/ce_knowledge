@@ -1,3 +1,14 @@
+---
+title: "飞控系统"
+aliases:
+  - "飞控模块总览"
+tags:
+  - flight-controller
+  - index
+module: "16-flight-controller"
+status: active
+---
+
 # 16 - 飞控系统
 
 ## 模块概述
@@ -20,3 +31,12 @@
 ### 2. 固件架构
 ### 3. 控制算法
 ### 4. 安全保护
+---
+
+## 相关链接
+
+- [[imu-system|IMU]]
+- [[gps-system|GPS]]
+- [[compass-system|指南针]]
+- [[esc-control|ESC]]
+- [[gimbal-control|云台]]

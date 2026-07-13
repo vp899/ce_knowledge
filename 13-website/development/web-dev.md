@@ -1,3 +1,16 @@
+---
+title: "产品网站开发"
+aliases:
+  - "网站开发"
+tags:
+  - website
+  - nextjs
+  - seo
+  - performance
+module: "13-website"
+status: active
+---
+
 # 产品网站开发
 
 ## 1. 网站架构规划
@@ -516,3 +529,8 @@ trackEvent('Product CTA Click', {
     ├── DDoS 防护
     └── 工具: Cloudflare / Vercel
 ```
+---
+
+## 相关链接
+
+- [[marketing-strategy|市场宣传]]

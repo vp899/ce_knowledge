@@ -1,3 +1,14 @@
+---
+title: "产品网站"
+aliases:
+  - "网站模块总览"
+tags:
+  - website
+  - index
+module: "13-website"
+status: active
+---
+
 # 13 - 产品网站
 
 ## 模块概述
@@ -123,3 +134,8 @@
 - 价格展示方式
 - 社会证明位置
 - 表单字段数量
+---
+
+## 相关链接
+
+- [[marketing-strategy|市场宣传]]

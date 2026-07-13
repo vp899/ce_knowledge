@@ -1,3 +1,17 @@
+---
+title: "云台系统"
+aliases:
+  - "云台控制"
+  - "云台驱动"
+tags:
+  - gimbal
+  - foc
+  - bldc
+  - stabilization
+module: "17-gimbal"
+status: active
+---
+
 # 云台系统
 
 ## 1. 云台机械结构
@@ -320,3 +334,10 @@ void position_loop_update(GimbalAxis *axis, float angle_ref) {
 ├── 低速精度差
 └── 适用于低成本方案
 ```
+---
+
+## 相关链接
+
+- [[camera-sensor|相机系统]]
+- [[imu-system|IMU]]
+- [[esc-control|ESC 控制]]

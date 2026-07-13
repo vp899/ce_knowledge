@@ -1,3 +1,18 @@
+---
+title: "通信协议详解"
+aliases:
+  - "协议详解"
+tags:
+  - communication
+  - mqtt
+  - ble
+  - wifi
+  - uart
+  - spi
+module: "06-communication"
+status: active
+---
+
 # 通信协议详解
 
 ## 1. MQTT 协议
@@ -628,3 +643,9 @@ static void spi_flash_wait_ready(void) {
     } while (status & 0x01);  // WIP bit
 }
 ```
+---
+
+## 相关链接
+
+- [[linux-driver-dev|Linux 驱动]]
+- [[video-transmission|图传系统]]

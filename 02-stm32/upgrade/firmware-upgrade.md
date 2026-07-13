@@ -1,6 +1,20 @@
+---
+title: "STM32 固件升级方案"
+aliases:
+  - "固件升级"
+  - "OTA 升级"
+tags:
+  - stm32
+  - ota
+  - firmware
+  - upgrade
+module: "02-stm32"
+status: active
+---
+
 # STM32 固件升级方案
 
-## 1. 升级架构设计
+## 1. 升级[[architecture-template|架构设计]]
 
 ### 整体架构
 ```
@@ -621,3 +635,10 @@ def pack_firmware(bin_path, key_path, output_path,
     print(f"  CRC32: 0x{crc32:08X}")
     print(f"  SHA256: {sha256.hex()}")
 ```
+---
+
+## 相关链接
+
+- [[secure-boot-impl|安全启动]]
+- [[key-mgmt|密钥管理]]
+- [[esc-control|ESC 控制]]

@@ -1,3 +1,15 @@
+---
+title: "产品架构设计文档模板"
+aliases:
+  - "架构设计文档"
+tags:
+  - architecture
+  - design
+  - template
+module: "09-architecture"
+status: active
+---
+
 # 产品架构设计文档模板
 
 ## 1. 架构设计文档 (SAD) 模板
@@ -83,7 +95,7 @@
 ├─────────────────────────────────────────────────┤
 │                   OS 抽象层                       │
 │   ┌──────────────────────────────────────┐       │
-│   │ FreeRTOS / CMSIS-RTOS               │       │
+│   │ [[rtos-drivers|FreeRTOS]] / CMSIS-RTOS               │       │
 │   └──────────────────────────────────────┘       │
 ├─────────────────────────────────────────────────┤
 │                   驱动层                          │
@@ -241,3 +253,9 @@ int storage_read(uint32_t addr, uint8_t *data, uint16_t len);
   - 缓解措施已定义
   - 第三方依赖已评估
 ```
+---
+
+## 相关链接
+
+- [[proposal-template|产品提案]]
+- [[flight-controller-firmware|飞控架构]]

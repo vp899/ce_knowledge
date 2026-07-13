@@ -1,6 +1,19 @@
+---
+title: "PCBA 制造流程"
+aliases:
+  - "打板制造"
+tags:
+  - hardware
+  - smt
+  - manufacturing
+  - bom
+module: "03-hardware"
+status: active
+---
+
 # 打板制造流程
 
-## 1. PCB 制造流程
+## 1. [[pcb-layout|PCB]] 制造流程
 
 ### 制造工艺流程
 ```
@@ -378,3 +391,8 @@ BOM 成本:
 ├── 减少工序
 └── 提高效率
 ```
+---
+
+## 相关链接
+
+- [[env-testing|可靠性测试]]

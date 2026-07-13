@@ -1,8 +1,19 @@
-# 04 - 安全启动
+---
+title: "安全启动"
+aliases:
+  - "安全模块总览"
+tags:
+  - security
+  - index
+module: "04-security"
+status: active
+---
+
+# 04 - [[secure-boot-impl|安全启动]]
 
 ## 模块概述
 
-嵌入式设备安全启动链设计、固件加密、密钥管理与安全生命周期。
+嵌入式设备安全启动链设计、固件加密、[[key-mgmt|密钥管理]]与安全生命周期。
 
 ## 目录结构
 
@@ -15,7 +26,7 @@
 
 ## 核心知识领域
 
-### 1. 安全启动 (Secure Boot)
+### 1. 安全启动 ([[secure-boot-impl|Secure Boot]])
 
 #### 启动信任链
 ```
@@ -40,7 +51,7 @@ ROM Boot (Root of Trust)
 | Level 0 | 无安全 | 直接启动 |
 | Level 1 | 软件验证 | Bootloader 校验固件 Hash |
 | Level 2 | 签名验证 | RSA/ECDSA 签名校验 |
-| Level 3 | 硬件信任根 | eFuse/OTP 中的公钥哈希 |
+| Level 3 | 硬件信任根 | [[key-mgmt|eFuse]]/OTP 中的公钥哈希 |
 | Level 4 | 完整信任链 | 每级验证 + 防回滚 + 加密 |
 
 ### 2. 固件加密与签名
@@ -106,10 +117,16 @@ Root Key (HSM / eFuse)
 - 公钥哈希与 eFuse 不一致
 - 时钟配置错误导致加密引擎异常
 - Flash 偏移地址计算错误
-- 固件升级后未更新版本号导致回滚失败
+- [[firmware-upgrade|固件升级]]后未更新版本号导致回滚失败
 
 ## 参考资源
 
 - [ARM TrustZone 技术](https://developer.arm.com/Architectures/TrustZone)
 - [NIST SP 800-193 (平台固件保护)](https://csrc.nist.gov/publications/detail/sp/800-193/final)
 - [OWASP Embedded Security](https://owasp.org/www-project-internet-of-things/)
+---
+
+## 相关链接
+
+- [[bootloader-design|Bootloader]]
+- [[android-security|Android 安全]]
