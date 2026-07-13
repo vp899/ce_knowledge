@@ -9,7 +9,7 @@ module: "./09-security/secure-boot"
 
 ## 概述
 
-本文介绍 secure-boot 领域的 intermediate 级别知识。
+RSA/ECC 签名是安全启动核心。本文详细讲解密钥管理和证书体系。
 
 完成本文学习后，你将能够：
 

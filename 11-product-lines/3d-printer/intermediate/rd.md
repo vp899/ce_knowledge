@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 3d-printer 领域的 intermediate 级别知识。
+高速打印需要精确运动控制。本文详细讲解 CoreXY、步进驱动和温控。
 
 完成本文学习后，你将能够：
 

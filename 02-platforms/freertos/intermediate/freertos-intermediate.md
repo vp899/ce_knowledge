@@ -9,7 +9,7 @@ module: "./02-platforms/freertos"
 
 ## 概述
 
-本文介绍 freertos 领域的 intermediate 级别知识。
+复杂系统需要互斥锁、事件组、定时器。本文讲解多任务设计和内存管理。
 
 完成本文学习后，你将能够：
 

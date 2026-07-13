@@ -9,7 +9,7 @@ module: "./12-backend/ota-server"
 
 ## 概述
 
-本文介绍 ota-server 领域的 advanced 级别知识。
+大规模 OTA 需要高可用。本文涵盖分布式架构和监控。
 
 完成本文学习后，你将能够：
 

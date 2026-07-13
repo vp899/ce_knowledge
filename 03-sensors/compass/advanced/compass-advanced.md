@@ -9,7 +9,7 @@ module: "./03-sensors/compass"
 
 ## 概述
 
-本文介绍 compass 领域的 advanced 级别知识。
+强干扰环境是工程难题。本文涵盖实时干扰检测和自适应校准。
 
 完成本文学习后，你将能够：
 

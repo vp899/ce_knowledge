@@ -9,7 +9,7 @@ module: "04-actuators"
 
 ## 概述
 
-本文介绍  领域的 beginner 级别知识。
+ESC 控制算法从六步换向到 FOC 的完整技术栈。本文涵盖 Clark/Park/SVPWM 推导、无感控制和 MTPA/弱磁策略。
 
 完成本文学习后，你将能够：
 

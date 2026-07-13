@@ -9,7 +9,7 @@ module: "./09-security/key-mgmt"
 
 ## 概述
 
-本文介绍 key-mgmt 领域的 advanced 级别知识。
+企业级需要合规和审计。本文涵盖密钥托管、恢复和安全审计。
 
 完成本文学习后，你将能够：
 

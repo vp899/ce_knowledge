@@ -8,7 +8,7 @@ level: beginner
 
 ## 概述
 
-本文介绍 control 领域的 beginner 级别知识。
+PID 是嵌入式控制基础。本文介绍 P/I/D 各项作用、调参方法和基本代码。
 
 完成本文学习后，你将能够：
 

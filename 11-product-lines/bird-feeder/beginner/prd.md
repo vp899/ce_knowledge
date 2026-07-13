@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 bird-feeder 领域的 beginner 级别知识。
+智能喂鸟器是新兴品类。本文分析观鸟市场和竞品。
 
 完成本文学习后，你将能够：
 

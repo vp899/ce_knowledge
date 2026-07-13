@@ -9,7 +9,7 @@ module: "./02-platforms/android"
 
 ## 概述
 
-本文介绍 android 领域的 beginner 级别知识。
+Android 是全球最大的移动操作系统，广泛应用于智能音箱、车载、机器人等产品。本文介绍 AOSP 源码结构、编译流程和基本定制方法。
 
 完成本文学习后，你将能够：
 

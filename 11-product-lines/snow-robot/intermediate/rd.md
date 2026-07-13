@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 snow-robot 领域的 intermediate 级别知识。
+除雪机构和低温设计是难点。本文详细讲解螺旋桨和履带方案。
 
 完成本文学习后，你将能够：
 

@@ -9,7 +9,7 @@ module: "./07-hardware/manufacturing"
 
 ## 概述
 
-本文介绍 manufacturing 领域的 advanced 级别知识。
+产品级制造需要质量体系。本文涵盖测试治具、供应链和成本优化。
 
 完成本文学习后，你将能够：
 

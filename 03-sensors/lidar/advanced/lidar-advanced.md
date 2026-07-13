@@ -9,7 +9,7 @@ module: "./03-sensors/lidar"
 
 ## 概述
 
-本文介绍 lidar 领域的 advanced 级别知识。
+大规模建图需要多传感器融合。本文涵盖 LIO-SAM、回环检测和生产级 SLAM。
 
 完成本文学习后，你将能够：
 

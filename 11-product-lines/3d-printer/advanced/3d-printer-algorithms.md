@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 3d-printer 领域的 advanced 级别知识。
+打印质量取决于运动算法。本文涵盖 S 曲线、Input Shaper 和自动调平。
 
 完成本文学习后，你将能够：
 

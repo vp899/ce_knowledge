@@ -19,7 +19,7 @@ status: active
 
 ## 概述
 
-本文介绍 release 领域的 intermediate 级别知识。
+产品发布需要全面准备。本文提供 DFM/热设计/发布检查表。
 
 完成本文学习后，你将能够：
 

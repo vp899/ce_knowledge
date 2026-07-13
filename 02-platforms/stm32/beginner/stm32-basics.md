@@ -9,7 +9,7 @@ module: "./02-platforms/stm32"
 
 ## 概述
 
-本文介绍 stm32 领域的 beginner 级别知识。
+STM32 是消费电子最常用 MCU。本文介绍架构、时钟、GPIO/UART/SPI/I2C 驱动和 CubeMX 使用。
 
 完成本文学习后，你将能够：
 

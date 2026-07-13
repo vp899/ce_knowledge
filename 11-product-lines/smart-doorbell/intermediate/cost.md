@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 smart-doorbell 领域的 intermediate 级别知识。
+AI 识别和低功耗是核心。本文详细讲解人脸识别和视频编码。
 
 完成本文学习后，你将能够：
 

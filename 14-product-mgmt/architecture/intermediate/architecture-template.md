@@ -15,7 +15,7 @@ status: active
 
 ## 概述
 
-本文介绍 architecture 领域的 intermediate 级别知识。
+架构设计决定技术路线。本文提供系统架构模板和评审清单。
 
 完成本文学习后，你将能够：
 

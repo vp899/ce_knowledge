@@ -9,7 +9,7 @@ module: "05-algorithms"
 
 ## 概述
 
-本文介绍 vision 领域的 intermediate 级别知识。
+特征和光流是视觉 SLAM 基础。本文详细讲解 FAST/ORB、LK 光流和跟踪。
 
 完成本文学习后，你将能够：
 

@@ -8,7 +8,7 @@ level: beginner
 
 ## 概述
 
-本文介绍 ci-cd 领域的 beginner 级别知识。
+CI/CD 自动化软件交付。本文介绍 Git 基础和自动化构建概念。
 
 完成本文学习后，你将能够：
 

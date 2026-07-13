@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 pet-robot 领域的 intermediate 级别知识。
+移动平台和 AI 互动是核心。本文详细讲解驱动和互动设计。
 
 完成本文学习后，你将能够：
 

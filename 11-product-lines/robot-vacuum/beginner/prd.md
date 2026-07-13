@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 robot-vacuum 领域的 beginner 级别知识。
+扫地机是家庭服务机器人最大品类。本文分析市场格局和用户需求。
 
 完成本文学习后，你将能够：
 

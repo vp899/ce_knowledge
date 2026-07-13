@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 laser-engraver 领域的 intermediate 级别知识。
+运动控制和激光功率是核心。本文详细讲解系统架构和成本。
 
 完成本文学习后，你将能够：
 

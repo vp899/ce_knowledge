@@ -9,7 +9,7 @@ module: "02-platforms"
 
 ## 概述
 
-本文介绍 freertos 领域的 beginner 级别知识。
+FreeRTOS 是最流行嵌入式 RTOS。本文介绍任务、队列、信号量和 STM32 移植。
 
 完成本文学习后，你将能够：
 

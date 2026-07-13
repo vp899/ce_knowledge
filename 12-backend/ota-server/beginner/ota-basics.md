@@ -9,7 +9,7 @@ module: "./12-backend/ota-server"
 
 ## 概述
 
-本文介绍 ota-server 领域的 beginner 级别知识。
+OTA 服务器管理固件升级。本文介绍基本概念和系统架构。
 
 完成本文学习后，你将能够：
 

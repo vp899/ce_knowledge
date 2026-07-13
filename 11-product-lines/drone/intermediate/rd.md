@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 drone 领域的 intermediate 级别知识。
+从概念到量产需要系统化流程。本文详细讲解系统架构、技术选型和 BOM 成本。
 
 完成本文学习后，你将能够：
 

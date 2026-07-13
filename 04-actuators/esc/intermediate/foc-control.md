@@ -8,7 +8,7 @@ level: intermediate
 
 ## 概述
 
-本文介绍 esc 领域的 intermediate 级别知识。
+FOC 提供精确电机控制。本文详细讲解 Clark/Park/SVPWM 和电流环实现。
 
 完成本文学习后，你将能够：
 

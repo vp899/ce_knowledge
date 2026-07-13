@@ -18,7 +18,7 @@ status: active
 
 ## 概述
 
-本文介绍 protocols 领域的 beginner 级别知识。
+通信协议连接各模块。本文介绍 UART/SPI/I2C 基础和 MQTT/BLE/WiFi。
 
 完成本文学习后，你将能够：
 

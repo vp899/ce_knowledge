@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 pet-robot 领域的 beginner 级别知识。
+宠物机器人陪伴宠物和主人。本文分析宠物科技市场。
 
 完成本文学习后，你将能够：
 

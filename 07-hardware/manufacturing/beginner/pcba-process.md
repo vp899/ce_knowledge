@@ -16,7 +16,7 @@ status: active
 
 ## 概述
 
-本文介绍 manufacturing 领域的 beginner 级别知识。
+PCBA 制造将设计变为产品。本文介绍 SMT 工艺、BOM 管理和元器件选型。
 
 完成本文学习后，你将能够：
 

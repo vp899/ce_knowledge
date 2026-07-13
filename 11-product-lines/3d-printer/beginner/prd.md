@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 3d-printer 领域的 beginner 级别知识。
+3D 打印改变制造业。本文分析桌面级/工业级市场和用户画像。
 
 完成本文学习后，你将能够：
 

@@ -16,7 +16,7 @@ status: active
 
 ## 概述
 
-本文介绍 project-mgmt 领域的 beginner 级别知识。
+项目管理确保按时交付。本文介绍 Stage-Gate 流程和敏捷实践。
 
 完成本文学习后，你将能够：
 

@@ -18,7 +18,7 @@ status: active
 
 ## 概述
 
-本文介绍 testing 领域的 intermediate 级别知识。
+嵌入式测试需要 HIL。本文详细讲解硬件在环、Robot Framework 和覆盖率。
 
 完成本文学习后，你将能够：
 

@@ -9,7 +9,7 @@ module: "02-platforms"
 
 ## 概述
 
-本文介绍 stm32 领域的 intermediate 级别知识。
+固件升级是产品核心能力。本文详细讲解 Bootloader、Flash 分区、OTA 协议和固件签名。
 
 完成本文学习后，你将能够：
 

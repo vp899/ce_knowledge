@@ -9,7 +9,7 @@ module: "05-algorithms"
 
 ## 概述
 
-本文介绍 vision 领域的 advanced 级别知识。
+视觉 SLAM 实现自主定位。本文涵盖 VINS-Mono、IMU 预积分和深度学习避障。
 
 完成本文学习后，你将能够：
 

@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 solar-boat 领域的 beginner 级别知识。
+无人太阳能船用于水质监测等领域。本文分析 USV 市场。
 
 完成本文学习后，你将能够：
 

@@ -8,7 +8,7 @@ level: intermediate
 
 ## 概述
 
-本文介绍 imu 领域的 intermediate 级别知识。
+姿态融合是 IMU 核心算法。本文详细讲解互补滤波、Mahony AHRS 原理和完整代码。
 
 完成本文学习后，你将能够：
 

@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 robot-vacuum 领域的 intermediate 级别知识。
+SLAM 和路径规划是核心技术。本文详细讲解 LDS 导航和 AI 避障。
 
 完成本文学习后，你将能够：
 

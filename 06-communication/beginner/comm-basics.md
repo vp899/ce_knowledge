@@ -9,7 +9,7 @@ module: "./06-communication"
 
 ## 概述
 
-本文介绍 06-communication 领域的 beginner 级别知识。
+通信基础是嵌入式开发必备知识。本文介绍 UART/SPI/I2C 有线协议和 MQTT/BLE/WiFi 无线通信。
 
 完成本文学习后，你将能够：
 

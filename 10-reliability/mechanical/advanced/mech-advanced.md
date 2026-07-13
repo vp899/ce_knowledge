@@ -9,7 +9,7 @@ module: "./10-reliability/mechanical"
 
 ## 概述
 
-本文介绍 mechanical 领域的 advanced 级别知识。
+结构优化需要仿真。本文涵盖有限元分析和可靠性试验。
 
 完成本文学习后，你将能够：
 

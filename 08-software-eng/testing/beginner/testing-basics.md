@@ -9,7 +9,7 @@ module: "./08-software-eng/testing"
 
 ## 概述
 
-本文介绍 testing 领域的 beginner 级别知识。
+测试保证软件质量。本文介绍测试分层、单元测试和用例设计。
 
 完成本文学习后，你将能够：
 

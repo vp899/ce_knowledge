@@ -9,7 +9,7 @@ module: "03-sensors"
 
 ## 概述
 
-本文介绍 gps 领域的 beginner 级别知识。
+GPS 是室外定位基础。本文介绍 GNSS 原理、NMEA 解析和模块选型。
 
 完成本文学习后，你将能够：
 

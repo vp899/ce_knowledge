@@ -9,7 +9,7 @@ module: "./02-platforms/linux"
 
 ## 概述
 
-本文介绍 linux 领域的 beginner 级别知识。
+Linux 是工业级产品首选 OS。本文介绍内核架构、字符设备驱动和设备树基础。
 
 完成本文学习后，你将能够：
 

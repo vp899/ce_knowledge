@@ -9,7 +9,7 @@ module: "04-actuators"
 
 ## 概述
 
-本文介绍 gimbal 领域的 intermediate 级别知识。
+增稳控制是云台核心。本文详细讲解 FOC 驱动、三轴 PID 和模式切换。
 
 完成本文学习后，你将能够：
 

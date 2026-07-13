@@ -18,7 +18,7 @@ status: active
 
 ## 概述
 
-本文介绍 learning-paths 领域的 beginner 级别知识。
+培训体系提供系统化学习路径。本文介绍 L0-L4 五级体系和考核标准。
 
 完成本文学习后，你将能够：
 

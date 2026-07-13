@@ -9,7 +9,7 @@ module: "./13-it-infra/dev-tools"
 
 ## 概述
 
-本文介绍 dev-tools 领域的 intermediate 级别知识。
+工具链需要集成自动化。本文详细讲解 CI/CD 和容器化。
 
 完成本文学习后，你将能够：
 

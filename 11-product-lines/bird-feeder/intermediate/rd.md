@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 bird-feeder 领域的 intermediate 级别知识。
+AI 鸟类识别是核心功能。本文详细讲解模型训练和太阳能设计。
 
 完成本文学习后，你将能够：
 

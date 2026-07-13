@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 handheld-gimbal 领域的 intermediate 级别知识。
+增稳控制是云台核心。本文详细讲解系统架构、FOC 驱动和成本分析。
 
 完成本文学习后，你将能够：
 

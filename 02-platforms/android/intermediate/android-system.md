@@ -9,7 +9,7 @@ module: "./02-platforms/android"
 
 ## 概述
 
-本文介绍 android 领域的 intermediate 级别知识。
+Framework 层定制是 Android 产品化核心。本文详细讲解 SystemServer、HIDL 接口、SELinux 策略和系统服务注册。
 
 完成本文学习后，你将能够：
 

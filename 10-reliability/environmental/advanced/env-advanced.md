@@ -9,7 +9,7 @@ module: "./10-reliability/environmental"
 
 ## 概述
 
-本文介绍 environmental 领域的 advanced 级别知识。
+可靠性增长发现设计弱点。本文涵盖加速老化和失效分析。
 
 完成本文学习后，你将能够：
 

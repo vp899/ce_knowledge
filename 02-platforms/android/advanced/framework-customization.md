@@ -9,7 +9,7 @@ module: "02-platforms"
 
 ## 概述
 
-本文介绍 android 领域的 advanced 级别知识。
+产品级 Android 需要 Treble、动态分区和 OTA。本文涵盖系统裁剪到性能优化的完整方案。
 
 完成本文学习后，你将能够：
 

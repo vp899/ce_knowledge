@@ -9,7 +9,7 @@ module: "./10-reliability/mechanical"
 
 ## 概述
 
-本文介绍 mechanical 领域的 intermediate 级别知识。
+振动分析识别问题。本文详细讲解减振设计和疲劳寿命。
 
 完成本文学习后，你将能够：
 

@@ -19,7 +19,7 @@ status: active
 
 ## 概述
 
-本文介绍 ota-server 领域的 intermediate 级别知识。
+完整 OTA 需要灰度和回滚。本文详细讲解数据库、API 和策略。
 
 完成本文学习后，你将能够：
 

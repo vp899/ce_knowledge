@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 solar-boat 领域的 intermediate 级别知识。
+太阳能供电和水上导航是核心。本文详细讲解 MPPT 和 RTK 导航。
 
 完成本文学习后，你将能够：
 

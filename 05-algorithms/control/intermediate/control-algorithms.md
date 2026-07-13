@@ -9,7 +9,7 @@ module: "05-algorithms"
 
 ## 概述
 
-本文介绍 control 领域的 intermediate 级别知识。
+无人机需要级联 PID 和混控。本文详细讲解高度/位置控制和混控矩阵。
 
 完成本文学习后，你将能够：
 

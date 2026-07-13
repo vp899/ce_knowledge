@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 pool-robot 领域的 beginner 级别知识。
+泳池机器人市场持续增长。本文分析全球市场和竞品。
 
 完成本文学习后，你将能够：
 

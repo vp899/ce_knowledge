@@ -9,7 +9,7 @@ module: "06-communication"
 
 ## 概述
 
-本文介绍 06-communication 领域的 advanced 级别知识。
+通信算法提升链路可靠性。本文涵盖 FEC 前向纠错、ARQ 重传、自适应码率和信道编码。
 
 完成本文学习后，你将能够：
 

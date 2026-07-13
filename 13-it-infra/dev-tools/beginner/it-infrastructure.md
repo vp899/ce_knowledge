@@ -19,7 +19,7 @@ status: active
 
 ## 概述
 
-本文介绍 dev-tools 领域的 beginner 级别知识。
+研发 IT 支撑团队协作。本文介绍 GitLab/Jenkins 工具链。
 
 完成本文学习后，你将能够：
 

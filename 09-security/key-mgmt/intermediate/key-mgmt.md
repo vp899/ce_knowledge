@@ -16,7 +16,7 @@ status: active
 
 ## 概述
 
-本文介绍 key-mgmt 领域的 intermediate 级别知识。
+产品级需要完整生命周期。本文详细讲解密钥层次、轮换和 HSM。
 
 完成本文学习后，你将能够：
 

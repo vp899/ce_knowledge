@@ -9,7 +9,7 @@ module: "./09-security/key-mgmt"
 
 ## 概述
 
-本文介绍 key-mgmt 领域的 beginner 级别知识。
+密钥管理保护加密安全。本文介绍密钥类型和基本存储方法。
 
 完成本文学习后，你将能够：
 

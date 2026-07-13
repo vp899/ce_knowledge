@@ -20,7 +20,7 @@ status: active
 
 ## 概述
 
-本文介绍  领域的 beginner 级别知识。
+CI/CD 流水线自动化从代码到发布全流程。本文提供 GitLab CI/Jenkins 完整配置和嵌入式构建方案。
 
 完成本文学习后，你将能够：
 

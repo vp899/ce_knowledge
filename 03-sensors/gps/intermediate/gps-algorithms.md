@@ -9,7 +9,7 @@ module: "03-sensors"
 
 ## 概述
 
-本文介绍 gps 领域的 intermediate 级别知识。
+RTK 实现厘米级定位。本文讲解差分原理、GPS/IMU 组合导航和 DOP 精度。
 
 完成本文学习后，你将能够：
 

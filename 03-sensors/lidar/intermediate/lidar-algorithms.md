@@ -9,7 +9,7 @@ module: "03-sensors"
 
 ## 概述
 
-本文介绍 lidar 领域的 intermediate 级别知识。
+点云匹配是 SLAM 基础。本文详细讲解 ICP/NDT 算法和占据栅格建图。
 
 完成本文学习后，你将能够：
 

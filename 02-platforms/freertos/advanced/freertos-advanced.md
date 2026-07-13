@@ -9,7 +9,7 @@ module: "./02-platforms/freertos"
 
 ## 概述
 
-本文介绍 freertos 领域的 advanced 级别知识。
+实时系统关键是确定性。本文涵盖实时性分析、低功耗和生产级设计。
 
 完成本文学习后，你将能够：
 

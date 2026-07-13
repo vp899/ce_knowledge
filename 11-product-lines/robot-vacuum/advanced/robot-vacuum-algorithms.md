@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 robot-vacuum 领域的 advanced 级别知识。
+全覆盖清扫和避障是算法核心。本文涵盖路径规划和自适应控制。
 
 完成本文学习后，你将能够：
 

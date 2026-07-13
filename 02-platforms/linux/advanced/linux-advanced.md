@@ -9,7 +9,7 @@ module: "./02-platforms/linux"
 
 ## 概述
 
-本文介绍 linux 领域的 advanced 级别知识。
+产品级 Linux 需要裁剪和调优。本文涵盖驱动移植、系统集成和生产级方案。
 
 完成本文学习后，你将能够：
 

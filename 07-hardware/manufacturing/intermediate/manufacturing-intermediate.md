@@ -9,7 +9,7 @@ module: "./07-hardware/manufacturing"
 
 ## 概述
 
-本文介绍 manufacturing 领域的 intermediate 级别知识。
+量产关注良率和一致性。本文详细讲解回流焊、DFM 和良率分析。
 
 完成本文学习后，你将能够：
 

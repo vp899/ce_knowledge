@@ -9,7 +9,7 @@ module: "./08-software-eng/testing"
 
 ## 概述
 
-本文介绍 testing 领域的 advanced 级别知识。
+生产级测试需要端到端覆盖。本文涵盖性能测试、持续测试和测试左移。
 
 完成本文学习后，你将能够：
 

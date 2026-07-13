@@ -9,7 +9,7 @@ module: "./04-actuators/gimbal"
 
 ## 概述
 
-本文介绍 gimbal 领域的 beginner 级别知识。
+云台用于相机增稳。本文介绍三轴结构和无刷电机选型。
 
 完成本文学习后，你将能够：
 

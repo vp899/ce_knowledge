@@ -9,7 +9,7 @@ module: "03-sensors"
 
 ## 概述
 
-本文介绍 camera 领域的 intermediate 级别知识。
+ISP 决定画质。本文详细讲解去马赛克、AE/AWB/AF 算法原理和实现。
 
 完成本文学习后，你将能够：
 

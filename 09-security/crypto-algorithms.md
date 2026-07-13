@@ -9,7 +9,7 @@ module: "09-security"
 
 ## 概述
 
-本文介绍  领域的 beginner 级别知识。
+加密算法保护数据和通信安全。本文涵盖 AES/RSA/SHA/ECDSA 的原理和嵌入式实现。
 
 完成本文学习后，你将能够：
 

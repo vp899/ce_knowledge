@@ -9,7 +9,7 @@ module: "./10-reliability/environmental"
 
 ## 概述
 
-本文介绍 environmental 领域的 intermediate 级别知识。
+EMC 确保不干扰其他设备。本文详细讲解辐射/传导测试和整改。
 
 完成本文学习后，你将能够：
 

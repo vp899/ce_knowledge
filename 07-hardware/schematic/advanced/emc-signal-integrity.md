@@ -8,7 +8,7 @@ level: advanced
 
 ## 概述
 
-本文介绍 schematic 领域的 advanced 级别知识。
+EMC 和信号完整性决定可靠性。本文涵盖辐射抑制、阻抗匹配和热设计。
 
 完成本文学习后，你将能够：
 

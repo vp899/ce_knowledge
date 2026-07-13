@@ -9,7 +9,7 @@ module: "03-sensors"
 
 ## 概述
 
-本文介绍 camera 领域的 beginner 级别知识。
+相机是无人机/扫地机/门铃核心传感器。本文介绍 CMOS 原理、MIPI CSI 接口和 ISP 基础。
 
 完成本文学习后，你将能够：
 

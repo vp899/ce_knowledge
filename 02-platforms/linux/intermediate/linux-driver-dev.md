@@ -9,7 +9,7 @@ module: "02-platforms"
 
 ## 概述
 
-本文介绍 linux 领域的 intermediate 级别知识。
+Platform/I2C/SPI 驱动是嵌入式 Linux 核心。本文详细讲解驱动模型、中断处理和 V4L2。
 
 完成本文学习后，你将能够：
 

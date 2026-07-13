@@ -9,7 +9,7 @@ module: "11-product-lines"
 
 ## 概述
 
-本文介绍 handheld-gimbal 领域的 beginner 级别知识。
+手持云台市场快速增长。本文分析手机云台/运动相机/口袋相机市场。
 
 完成本文学习后，你将能够：
 

@@ -8,7 +8,7 @@ level: intermediate
 
 ## 概述
 
-本文介绍 schematic 领域的 intermediate 级别知识。
+电源和接口是原理图核心。本文详细讲解 LDO/DC-DC、MCU 系统和 ESD 保护。
 
 完成本文学习后，你将能够：
 

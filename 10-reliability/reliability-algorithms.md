@@ -9,7 +9,7 @@ module: "10-reliability"
 
 ## 概述
 
-本文介绍  领域的 beginner 级别知识。
+可靠性算法量化产品寿命。本文涵盖威布尔分布、Arrhenius 加速模型和 MTBF 预测。
 
 完成本文学习后，你将能够：
 

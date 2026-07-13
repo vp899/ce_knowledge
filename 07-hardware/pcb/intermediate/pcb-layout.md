@@ -16,7 +16,7 @@ status: active
 
 ## 概述
 
-本文介绍 pcb 领域的 intermediate 级别知识。
+多层板需要叠层和阻抗控制。本文详细讲解 Layout 规则和 DFM 检查。
 
 完成本文学习后，你将能够：
 
