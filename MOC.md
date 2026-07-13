@@ -4,200 +4,170 @@ aliases:
   - "MOC"
   - "知识地图"
   - "Home"
-tags:
-  - moc
-  - index
-  - root
-module: root
+tags: [moc, index, root]
 status: active
 ---
 
-# 🗺️ 消费电子软件开发知识库
+# 🗺️ 消费电子产品开发知识库
 
-> 无人机 · 机器人 · 消费电子 · 全栈知识
+> 面向企业培训 · 覆盖无人机/手持云台/扫地机/3D打印机 · 产品级完整知识
 
 ---
 
-## 📚 基础模块
+## 📖 快速导航
 
-```dataview
-TABLE title AS "模块", tags AS "标签"
-FROM #index
-SORT file.name ASC
-```
+### 按角色
+| 我是... | 从这里开始 |
+|---------|-----------|
+| 🆕 新入职工程师 | [[learning-paths\|学习路径]] |
+| 💻 嵌入式开发 | [[stm32\|STM32]] → [[linux-driver-dev\|Linux 驱动]] → [[ci-cd-pipeline\|CI/CD]] |
+| 📷 算法工程师 | [[imu-system\|IMU 融合]] → [[visual-slam\|视觉 SLAM]] → [[lidar-system\|激光雷达]] |
+| 🔧 硬件工程师 | [[schematic-design\|原理图]] → [[pcb-layout\|PCB]] → [[product-design\|产品设计]] |
+| 🧪 测试工程师 | [[testing-system\|测试体系]] → [[env-testing\|环境测试]] → [[it-infrastructure\|实验室]] |
+| 📋 产品经理 | [[proposal-template\|产品提案]] → [[architecture-template\|架构设计]] → [[dev-process\|项目管理]] |
+| 🚀 DevOps | [[ci-cd-pipeline\|CI/CD]] → [[ota-system\|OTA]] → [[it-infrastructure\|IT 架构]] |
 
-| 模块 | 说明 | 入口 |
+### 按产品
+| 产品 | 核心模块 |
+|------|----------|
+| 🚁 无人机 | [[flight-controller-firmware\|飞控]] → [[camera-sensor\|相机]] → [[video-transmission\|图传]] |
+| 📱 手持云台 | [[gimbal-control\|云台]] → [[imu-system\|IMU]] → [[camera-sensor\|相机]] |
+| 🤖 扫地机器人 | [[lidar-system\|LiDAR]] → [[visual-slam\|SLAM]] → [[esc-control\|电机]] |
+| 🖨️ 3D打印机 | [[esc-control\|步进驱动]] → [[firmware-upgrade\|固件]] → [[pcb-layout\|PCB]] |
+
+---
+
+## 🏗️ 知识体系 (16 层)
+
+### L1 基础能力
+| 模块 | 内容 | 入口 |
 |------|------|------|
-| 🤖 Android | 系统定制、Framework、构建、安全 | [[README|Android 开发]] |
-| ⚡ STM32 | 固件升级、Bootloader、外设 | [[README|STM32 升级]] |
-| 🔧 硬件 | 原理图、PCB、打板、BOM | [[README|硬件设计]] |
-| 🔒 安全启动 | Secure Boot、加密、密钥 | [[README|安全启动]] |
-| 🖥️ 驱动 | Linux/RTOS 驱动开发 | [[README|驱动开发]] |
-| 📡 通信 | MQTT/BLE/WiFi/UART | [[README|通信协议]] |
-| 🧪 可靠性 | 环境/机械/EMC 测试 | [[README|可靠性测试]] |
-| 📋 产品提案 | 模板、市场分析、商业论证 | [[README|产品提案]] |
-| 🏗️ 架构 | 系统/软硬件架构设计 | [[README|架构设计]] |
-| ⚠️ 风险 | 风险评估、缓解、跟踪 | [[README|风险管理]] |
-| 📊 项目管理 | 开发流程、敏捷、质量 | [[README|项目管理]] |
-| 📣 市场 | 品牌、内容、渠道、活动 | [[README|市场宣传]] |
-| 🌐 网站 | 设计、开发、SEO、分析 | [[README|产品网站]] |
+| ⚡ 电子基础 | 电路/运放/电源/数字电路 | 01-foundations |
+| 💻 C 语言 | 指针/内存/状态机/Makefile | 01-foundations |
+| 🐧 Linux 基础 | 内核/驱动/设备树/构建 | 01-foundations |
+| ⏱️ RTOS | FreeRTOS/RT-Thread/任务调度 | 01-foundations |
 
----
+### L2 平台技术
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| 🤖 Android | Framework/HAL/系统/安全/构建 | [[framework-customization\|Android]] |
+| ⚡ STM32 | MCU 驱动/Bootloader/OTA | [[firmware-upgrade\|STM32]] |
+| 🐧 Linux SoC | 驱动/设备树/系统定制 | [[linux-driver-dev\|Linux 驱动]] |
+| ⏱️ FreeRTOS | 任务/队列/信号量/中断 | [[freertos-drivers\|RTOS]] |
 
-## 🚁 传感器与执行器模块
+### L3 传感器
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| 📷 相机 | Sensor/ISP/AF/3A/V4L2 | [[camera-sensor\|相机]] |
+| 📐 IMU | 传感器/姿态融合/校准/振动 | [[imu-system\|IMU]] |
+| 📍 GPS | GNSS/RTK/天线/组合导航 | [[gps-system\|GPS]] |
+| 🧭 指南针 | 磁力计/校准/干扰/航向 | [[compass-system\|指南针]] |
+| 📡 激光雷达 | ToF/点云/SLAM/驱动 | [[lidar-system\|LiDAR]] |
 
-| 模块 | 核心内容 | 入口 |
-|------|----------|------|
-| 📷 相机 | Sensor/ISP/AF/3A/MIPI/V4L2 | [[camera-sensor|图像传感器]] |
-| 📡 图传 | H.264/H.265/FEC/天线/链路 | [[video-transmission|图传系统]] |
-| 🚁 飞控 | PID/EKF/混控/失联保护/RTL | [[flight-controller-firmware|飞控系统]] |
-| 🎥 云台 | FOC/三轴控制/增稳/跟踪 | [[gimbal-control|云台系统]] |
-| 👁️ 视觉 | SLAM/避障/跟踪/深度 | [[visual-slam|视觉系统]] |
-| 🧭 指南针 | 磁力计/校准/干扰/航向 | [[compass-system|指南针]] |
-| 📐 IMU | 传感器/融合/校准/振动 | [[imu-system|IMU]] |
-| 📍 GPS | RTK/天线/组合导航 | [[gps-system|GPS/GNSS]] |
-| ⚡ 电调 | BLDC/FOC/DShot/保护 | [[esc-control|动力电调]] |
-| 📡 激光雷达 | ToF/SLAM/点云/驱动 | [[lidar-system|激光雷达]] |
+### L4 执行器
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| ⚡ ESC | BLDC/FOC/DShot/保护 | [[esc-control\|ESC]] |
+| 🎥 云台 | 三轴控制/增稳/跟踪 | [[gimbal-control\|云台]] |
 
----
+### L5 算法
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| 👁️ 视觉 | SLAM/避障/跟踪/深度 | [[visual-slam\|视觉]] |
+| 🎯 控制 | PID/EKF/混控/失联保护 | [[flight-controller-firmware\|飞控]] |
 
-## 🏭 产品线
+### L6 通信
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| 📡 协议 | MQTT/BLE/WiFi/UART/SPI | [[protocol-details\|协议]] |
+| 📡 图传 | H.264/H.265/FEC/天线/链路 | [[video-transmission\|图传]] |
 
+### L7 硬件设计
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| 📐 原理图 | 电源/时钟/复位/ESD | [[schematic-design\|原理图]] |
+| 🔲 PCB | 叠层/阻抗/布线/EMC | [[pcb-layout\|PCB]] |
+| 🏭 制造 | SMT/DIP/组装/DFM | [[pcba-process\|制造]] |
+
+### L8 软件工程
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| 🔄 CI/CD | GitLab CI/Jenkins/自动化 | [[ci-cd-pipeline\|CI/CD]] |
+| 🧪 测试 | 单元/HIL/自动化/Robot | [[testing-system\|测试]] |
+
+### L9 安全
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| 🔒 安全启动 | 信任链/RSA/防回滚 | [[secure-boot-impl\|安全启动]] |
+| 🔑 密钥管理 | 生成/存储/轮换/销毁 | [[key-mgmt\|密钥]] |
+
+### L10 可靠性
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| 🌡️ 环境测试 | 温湿度/盐雾/防水/EMC | [[env-testing\|环境测试]] |
+| 🔨 机械测试 | 跌落/振动/按键寿命 | [[mechanical-testing\|机械测试]] |
+
+### L11 产品线
 | 产品 | 核心技术 | 入口 |
 |------|----------|------|
-| 📱 手持云台相机 | FOC增稳/人脸跟踪/低功耗 | [[README|手持云台]] |
-| 🤖 扫地机器人 | LDS SLAM/全覆盖/AI避障 | [[README|扫地机器人]] |
-| 🖨️ 3D打印机 | 步进控制/温控/切片 | [[README|3D打印机]] |
+| 📱 手持云台 | FOC增稳/人脸跟踪/低功耗 | [[handheld-gimbal\|手持云台]] |
+| 🤖 扫地机器人 | LDS SLAM/全覆盖/AI避障 | [[robot-vacuum\|扫地机]] |
+| 🖨️ 3D打印机 | 步进控制/温控/切片 | [[3d-printer\|3D打印机]] |
 
----
+### L12 后台系统
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| 🔄 OTA | 升级管理/灰度/回滚/统计 | [[ota-system\|OTA]] |
 
-## 🎓 培训体系
+### L13 IT 基础设施
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| 🛠️ 研发工具 | GitLab/Jenkins/实验室/监控 | [[it-infrastructure\|IT 架构]] |
 
+### L14 产品管理
+| 模块 | 内容 | 入口 |
+|------|------|------|
+| 📋 提案 | 市场/竞品/商业论证 | [[proposal-template\|提案]] |
+| 🏗️ 架构 | 系统/软硬件/接口 | [[architecture-template\|架构]] |
+| ⚠️ 风险 | 评估/缓解/跟踪 | [[risk-management\|风险]] |
+| 📊 项目 | 流程/敏捷/质量 | [[dev-process\|项目管理]] |
+| 🚀 发布 | DFM/热设计/检查清单 | [[product-design\|产品设计]] |
+
+### L15 培训体系
 | 级别 | 内容 | 入口 |
 |------|------|------|
-| L0 入门基础 | 电子/C语言/Linux | [[README|培训体系]] |
-| L1 核心技能 | STM32/驱动/硬件 | [[README|培训体系]] |
-| L2 产品线 | 无人机/扫地机/打印机 | [[README|培训体系]] |
-| L3 产品实战 | 定义/架构/量产/发布 | [[product-design|产品设计]] |
-| L4 专家进阶 | 高级控制/AI/安全 | [[README|培训体系]] |
+| L0 入门 | 电子/C语言/Linux (4周) | [[learning-paths\|学习路径]] |
+| L1 核心 | STM32/驱动/硬件 (8周) | [[learning-paths\|学习路径]] |
+| L2 产品线 | 无人机/扫地机/打印机 (6周) | [[learning-paths\|学习路径]] |
+| L3 实战 | 定义/架构/量产/发布 (4周) | [[learning-paths\|学习路径]] |
 
----
-
-## 🔧 产品设计
-
-| 主题 | 内容 | 入口 |
+### L16 市场与网站
+| 模块 | 内容 | 入口 |
 |------|------|------|
-| DFM | 可制造性/结构/装配 | [[product-design|产品设计]] |
-| 热设计 | 散热/温控/热仿真 | [[product-design|产品设计]] |
-| 可靠性 | 测试规划/失效分析 | [[product-design|产品设计]] |
-| 发布清单 | 硬件/软件/市场/法务 | [[product-design|产品设计]] |
+| 📣 市场 | 品牌/内容/渠道/发布会 | [[marketing-strategy\|市场]] |
+| 🌐 网站 | 设计/开发/SEO/分析 | [[web-dev\|网站]] |
 
 ---
 
-## 🔗 产品技术栈全景图
+## 🔗 技术全景图
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                          产品技术栈                                      │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                         │
-│  ┌─────────────────────┐  ┌─────────────────────┐  ┌────────────────┐ │
-│  │    无人机/手持云台    │  │     扫地机器人       │  │   3D 打印机    │ │
-│  │  ┌───────────────┐  │  │  ┌───────────────┐  │  │ ┌────────────┐│ │
-│  │  │ 飞控/云台控制  │  │  │  │ SLAM/路径规划 │  │  │ │运动控制    ││ │
-│  │  │ 图传/视觉     │  │  │  │ 避障/清扫     │  │  │ │温控/挤出   ││ │
-│  │  └───────────────┘  │  │  └───────────────┘  │  │ └────────────┘│ │
-│  └──────────┬──────────┘  └──────────┬──────────┘  └───────┬────────┘ │
-│             │                        │                     │          │
-│  ┌──────────┴────────────────────────┴─────────────────────┴────────┐ │
-│  │                       共享技术平台                                 │ │
-│  │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐         │ │
-│  │  │ IMU  │ │ 相机 │ │LiDAR │ │ GPS  │ │ 电机 │ │通信  │         │ │
-│  │  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘         │ │
-│  └──────────────────────────────────────────────────────────────────┘ │
-│                                                                         │
-│  ┌──────────────────────────────────────────────────────────────────┐ │
-│  │                       基础能力                                     │ │
-│  │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐         │ │
-│  │  │STM32 │ │Linux │ │RTOS  │ │驱动  │ │安全  │ │硬件  │         │ │
-│  │  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘         │ │
-│  └──────────────────────────────────────────────────────────────────┘ │
-│                                                                         │
-└─────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│  产品线:  无人机 │ 手持云台 │ 扫地机器人 │ 3D打印机          │
+├─────────────────────────────────────────────────────────────┤
+│  传感器:  相机 │ IMU │ GPS │ 指南针 │ LiDAR                 │
+│  执行器:  ESC │ 云台 │ 电机                                  │
+│  算法:    控制 │ 视觉 │ SLAM │ 融合                         │
+│  通信:    协议 │ 图传 │ 遥测                                │
+├─────────────────────────────────────────────────────────────┤
+│  平台:    STM32 │ Linux │ Android │ FreeRTOS                 │
+│  硬件:    原理图 │ PCB │ 制造 │ 热设计                      │
+│  软件:    CI/CD │ 测试 │ DevOps                             │
+│  安全:    安全启动 │ 密钥管理                                │
+├─────────────────────────────────────────────────────────────┤
+│  后台:    OTA │ 云架构 │ 设备管理                            │
+│  IT:      GitLab │ Jenkins │ 实验室 │ 监控                   │
+│  管理:    提案 │ 架构 │ 风险 │ 项目 │ 发布                   │
+│  培训:    L0→L1→L2→L3→L4                                    │
+└─────────────────────────────────────────────────────────────┘
 ```
-
----
-
-## 🏷️ 标签索引
-
-### 按技术领域
-- `#android` - Android 系统开发
-- `#stm32` - STM32 微控制器
-- `#hardware` - 硬件设计
-- `#security` - 安全机制
-- `#drivers` - 驱动开发
-- `#communication` - 通信协议
-
-### 按无人机子系统
-- `#flight-controller` - 飞控
-- `#camera` - 相机
-- `#gimbal` - 云台
-- `#vision` - 视觉
-- `#imu` - 惯性测量
-- `#gps` - 定位
-- `#esc` - 电调
-- `#lidar` - 激光雷达
-- `#compass` - 指南针
-- `#image-transmission` - 图传
-
-### 按文档类型
-- `#index` - 索引/入口
-- `#template` - 模板
-- `#code` - 代码示例
-
----
-
-## 📖 阅读路径
-
-### 🚀 无人机新手入门
-1. [[flight-controller-firmware|飞控系统]] → 了解飞控架构
-2. [[imu-system|IMU]] → 理解姿态感知
-3. [[gps-system|GPS]] → 理解定位
-4. [[esc-control|ESC]] → 理解动力系统
-5. [[compass-system|指南针]] → 理解航向
-
-### 📷 相机系统开发
-1. [[camera-sensor|图像传感器]] → Sensor 选型与驱动
-2. [[video-transmission|图传系统]] → 编码与传输
-3. [[gimbal-control|云台系统]] → 增稳与控制
-4. [[visual-slam|视觉系统]] → SLAM 与避障
-
-### 🤖 扫地机器人开发
-1. [[lidar-system|激光雷达]] → LDS 测距原理
-2. [[visual-slam|视觉 SLAM]] → 建图算法
-3. [[esc-control|电机控制]] → 驱动系统
-4. [[linux-driver-dev|Linux 驱动]] → 系统开发
-
-### 🖨️ 3D 打印机开发
-1. [[esc-control|电机控制]] → 步进电机驱动
-2. [[firmware-upgrade|固件开发]] → Marlin/Klipper
-3. [[pcb-layout|PCB 设计]] → 主控板设计
-4. [[schematic-design|原理图]] → 电路设计
-
-### 📱 手持云台开发
-1. [[gimbal-control|云台控制]] → FOC 增稳
-2. [[imu-system|IMU]] → 姿态融合
-3. [[camera-sensor|相机]] → 图像采集
-4. [[esc-control|电机驱动]] → 无刷电机
-
-### 🔒 安全体系
-1. [[secure-boot-impl|安全启动]] → 信任链设计
-2. [[key-mgmt|密钥管理]] → 密钥生命周期
-3. [[android-security|Android 安全]] → 系统安全
-
-### 📋 产品全流程
-1. [[proposal-template|产品提案]] → 市场与商业
-2. [[architecture-template|架构设计]] → 技术方案
-3. [[dev-process|项目管理]] → 执行与管控
-4. [[risk-management|风险管理]] → 风险控制
-5. [[product-design|产品设计]] → DFM/热设计/发布
