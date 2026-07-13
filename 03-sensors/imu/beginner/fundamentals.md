@@ -1,0 +1,272 @@
+---
+title: "IMU 初级 - 基础原理"
+tags: [imu, beginner, accelerometer, gyroscope, fundamentals]
+level: beginner
+---
+
+# IMU 基础原理
+
+## 概述
+
+本文介绍 imu 领域的 beginner 级别知识。
+
+完成本文学习后，你将能够：
+
+- 理解核心概念和基本原理
+- 掌握关键技术和实现方法
+- 应用到实际产品开发中
+
+## 背景知识
+
+### 相关概念
+
+> 占位 - 待补充前置概念
+
+## 核心内容
+
+### 1. 什么是 IMU
+
+IMU (Inertial Measurement Unit) 惯性测量单元，是测量物体三轴加速度和三轴角速度的传感器。
+
+```
+IMU = 加速度计 (Accelerometer) + 陀螺仪 (Gyroscope)
+
+高级 IMU 还包含:
+IMU = 加速度计 + 陀螺仪 + 磁力计 (Magnetometer) → 9 轴
+```
+
+### 2. 加速度计原理
+
+### 工作原理
+```
+加速度计测量的是「比力」(specific force)，即除重力外的外力产生的加速度。
+
+弹簧-质量块模型:
+                    ┌─────────────┐
+    加速度 →        │  ┌───┐      │
+                    │  │ m │──弹簧──│── 输出位移
+                    │  └───┘      │
+                    └─────────────┘
+
+    F = m · a
+    弹簧伸长量 ∝ 加速度
+
+静止时:
+    加速度计测量值 = 重力加速度 (9.8 m/s²) 方向向上
+    → 所以静止时 Z 轴读数约为 1g
+
+自由落体时:
+    加速度计测量值 = 0 (失重状态)
+```
+
+### 三轴加速度计
+```
+          Z 轴 (向上为正)
+          │
+          │
+          └─────── Y 轴
+         ╱
+        ╱
+       ╱
+      X 轴
+
+各轴测量:
+  ax: X 轴加速度 (左右)
+  ay: Y 轴加速度 (前后)
+  az: Z 轴加速度 (上下)
+
+静止水平放置时:
+  ax = 0, ay = 0, az = +1g (≈9.8 m/s²)
+
+倾斜 45° 时:
+  ax = 0, ay = sin(45°)·g ≈ 0.707g, az = cos(45°)·g ≈ 0.707g
+```
+
+### 从加速度计算倾斜角
+```c
+// 从加速度计计算 Roll 和 Pitch
+float calc_roll(float ax, float ay, float az) {
+    return atan2f(ay, az);  // 绕 X 轴倾斜
+}
+
+float calc_pitch(float ax, float ay, float az) {
+    return atan2f(-ax, sqrtf(ay*ay + az*az));  // 绕 Y 轴倾斜
+}
+
+// 注意: 加速度计无法测量 Yaw (绕 Z 轴旋转)
+// 因为重力方向不变，无法区分水平旋转
+```
+
+### 3. 陀螺仪原理
+
+### 工作原理
+```
+MEMS 陀螺仪利用科里奥利力 (Coriolis Force) 测量角速度。
+
+原理:
+  振动质量块在旋转参考系中会受到科里奥利力:
+  F_coriolis = -2m × (ω × v)
+
+  ω = 角速度
+  v = 振动速度
+  m = 质量
+
+MEMS 结构:
+  ┌─────────────────────────┐
+  │  ┌───────────────────┐  │
+  │  │  驱动梳齿 (振动)   │  │
+  │  │  ←→ ←→ ←→ ←→     │  │
+  │  └───────────────────┘  │
+  │         ↓ 科里奥利力     │
+  │  ┌───────────────────┐  │
+  │  │  感应梳齿 (检测)   │  │
+  │  │  ↕ ↕ ↕ ↕          │  │
+  │  └───────────────────┘  │
+  └─────────────────────────┘
+
+输出: 角速度 (°/s 或 rad/s)
+```
+
+### 三轴陀螺仪
+```
+测量绕三个轴的旋转角速度:
+
+  gx: 绕 X 轴角速度 (Roll rate)
+  gy: 绕 Y 轴角速度 (Pitch rate)
+  gz: 绕 Z 轴角速度 (Yaw rate)
+
+单位转换:
+  1°/s = π/180 rad/s ≈ 0.01745 rad/s
+  1 rad/s = 180/π °/s ≈ 57.3 °/s
+```
+
+### 4. 常见 IMU 模块
+
+| 模块 | 轴数 | 接口 | 价格 | 适用 |
+|------|------|------|------|------|
+| MPU6050 | 6 轴 | I2C | ¥5 | 入门学习 |
+| GY-521 | 6 轴 | I2C | ¥8 | Arduino |
+| BMI160 | 6 轴 | SPI/I2C | ¥15 | 穿戴 |
+| ICM-42688-P | 6 轴 | SPI | ¥25 | 无人机 |
+| BNO055 | 9 轴 | I2C | ¥60 | 内置融合 |
+
+### 5. 第一个 IMU 程序
+
+```c
+// MPU6050 读取示例 (I2C)
+#include <Wire.h>
+
+#define MPU6050_ADDR 0x68
+
+void setup() {
+    Serial.begin(115200);
+    Wire.begin();
+    
+    // 唤醒 MPU6050
+    Wire.beginTransmission(MPU6050_ADDR);
+    Wire.write(0x6B);  // PWR_MGMT_1
+    Wire.write(0x00);  // 唤醒
+    Wire.endTransmission();
+    
+    // 设置量程
+    Wire.beginTransmission(MPU6050_ADDR);
+    Wire.write(0x1B);  // GYRO_CONFIG
+    Wire.write(0x08);  // ±500°/s
+    Wire.endTransmission();
+    
+    Wire.beginTransmission(MPU6050_ADDR);
+    Wire.write(0x1C);  // ACCEL_CONFIG
+    Wire.write(0x08);  // ±4g
+    Wire.endTransmission();
+}
+
+void loop() {
+    Wire.beginTransmission(MPU6050_ADDR);
+    Wire.write(0x3B);  // 从加速度计数据开始
+    Wire.endTransmission(false);
+    Wire.requestFrom(MPU6050_ADDR, 14, true);
+    
+    int16_t ax = Wire.read() << 8 | Wire.read();
+    int16_t ay = Wire.read() << 8 | Wire.read();
+    int16_t az = Wire.read() << 8 | Wire.read();
+    int16_t temp = Wire.read() << 8 | Wire.read();
+    int16_t gx = Wire.read() << 8 | Wire.read();
+    int16_t gy = Wire.read() << 8 | Wire.read();
+    int16_t gz = Wire.read() << 8 | Wire.read();
+    
+    // 转换为物理单位
+    float accel_x = ax / 8192.0;  // ±4g → 8192 LSB/g
+    float accel_y = ay / 8192.0;
+    float accel_z = az / 8192.0;
+    float gyro_x = gx / 65.5;     // ±500°/s → 65.5 LSB/(°/s)
+    float gyro_y = gy / 65.5;
+    float gyro_z = gz / 65.5;
+    float temperature = temp / 340.0 + 36.53;
+    
+    Serial.printf("Accel: %.2f %.2f %.2f g\n", accel_x, accel_y, accel_z);
+    Serial.printf("Gyro:  %.2f %.2f %.2f °/s\n", gyro_x, gyro_y, gyro_z);
+    Serial.printf("Temp:  %.1f °C\n", temperature);
+    
+    delay(100);
+}
+```
+
+### 6. 关键术语
+
+| 术语 | 含义 | 典型值 |
+|------|------|--------|
+| 量程 (Range) | 最大测量范围 | ±2g~±16g, ±250~±2000°/s |
+| 灵敏度 (Sensitivity) | LSB/单位 | 16384 LSB/g (±2g) |
+| 零偏 (Bias) | 零输入时的输出 | ±20~100 mg, ±0.5~5 °/s |
+| 噪声密度 | 每√Hz 噪声 | 40~200 μg/√Hz |
+| 温漂 | 温度引起的零偏变化 | ±0.01 °/s/°C |
+| 带宽 | 有效频率范围 | 5~250 Hz |
+
+## 实践示例
+
+### 示例代码
+
+```c
+// 占位 - 待补充示例代码
+```
+
+**代码说明**：
+- 待补充
+
+## 深入理解
+
+### 原理分析
+
+> 占位 - 待补充原理分析
+
+### 最佳实践
+
+1. 待补充
+
+## 常见问题
+
+### Q1: 待补充常见问题？
+
+**A**: 待补充答案。
+
+## 总结
+
+本文核心要点：
+
+- 待补充
+
+## 延伸阅读
+
+- 待补充相关文章链接
+
+## 参考资料
+
+1. 待补充
+
+---
+
+**练习题**：
+
+1. 待补充
+
+**下一步**：建议学习 [[imu/intermediate/|中级内容]]

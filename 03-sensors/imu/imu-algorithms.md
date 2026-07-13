@@ -1,3 +1,4 @@
+level: beginner
 ---
 title: "IMU 姿态融合算法详解"
 tags: [imu, algorithm, complementary-filter, mahony, madgwick, ekf, kalman]
@@ -6,7 +7,25 @@ module: "03-sensors"
 
 # IMU 姿态融合算法详解
 
-## 1. 姿态表示方法
+## 概述
+
+本文介绍  领域的 beginner 级别知识。
+
+完成本文学习后，你将能够：
+
+- 理解核心概念和基本原理
+- 掌握关键技术和实现方法
+- 应用到实际产品开发中
+
+## 背景知识
+
+### 相关概念
+
+> 占位 - 待补充前置概念
+
+## 核心内容
+
+### 1. 姿态表示方法
 
 ### 欧拉角 (Euler Angles)
 ```
@@ -82,7 +101,7 @@ dq/dt = 0.5 · q ⊗ ω
   然后归一化: q = q / |q|
 ```
 
-## 2. 互补滤波器 (Complementary Filter)
+### 2. 互补滤波器 (Complementary Filter)
 
 ### 原理
 ```
@@ -189,7 +208,7 @@ void comp_get_euler(ComplementaryFilter *cf,
 }
 ```
 
-## 3. Mahony 滤波器 (AHRS)
+### 3. Mahony 滤波器 (AHRS)
 
 ### 原理详解
 ```
@@ -331,7 +350,7 @@ void mahony_update(MahonyAHRS *ahrs,
 }
 ```
 
-## 4. 扩展卡尔曼滤波 (EKF)
+### 4. 扩展卡尔曼滤波 (EKF)
 
 ### 状态空间模型
 ```
@@ -459,7 +478,7 @@ void compute_H_accel(float *x, float H[3][STATE_DIM]) {
 }
 ```
 
-## 5. 振动抑制算法
+### 5. 振动抑制算法
 
 ### 陷波滤波器 (Notch Filter)
 ```c
@@ -495,9 +514,58 @@ float notch_filter(NotchFilter *nf, float input) {
 
 ---
 
-## 相关链接
+### 相关链接
 
 - [[compass-system|指南针]] — 磁力计校准
 - [[gps-system|GPS]] — GPS/INS 组合导航
 - [[flight-controller-firmware|飞控]] — 姿态控制
 - [[gimbal-control|云台]] — 云台增稳
+
+## 实践示例
+
+### 示例代码
+
+```c
+// 占位 - 待补充示例代码
+```
+
+**代码说明**：
+- 待补充
+
+## 深入理解
+
+### 原理分析
+
+> 占位 - 待补充原理分析
+
+### 最佳实践
+
+1. 待补充
+
+## 常见问题
+
+### Q1: 待补充常见问题？
+
+**A**: 待补充答案。
+
+## 总结
+
+本文核心要点：
+
+- 待补充
+
+## 延伸阅读
+
+- 待补充相关文章链接
+
+## 参考资料
+
+1. 待补充
+
+---
+
+**练习题**：
+
+1. 待补充
+
+**下一步**：建议学习 [[/intermediate/|中级内容]]

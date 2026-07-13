@@ -1,3 +1,4 @@
+level: beginner
 ---
 title: "ESC 控制算法详解"
 tags: [esc, bldc, foc, svpwm, six-step, sensorless, algorithm]
@@ -6,7 +7,25 @@ module: "04-actuators"
 
 # ESC 控制算法详解
 
-## 1. 六步换向 (Block Commutation)
+## 概述
+
+本文介绍  领域的 beginner 级别知识。
+
+完成本文学习后，你将能够：
+
+- 理解核心概念和基本原理
+- 掌握关键技术和实现方法
+- 应用到实际产品开发中
+
+## 背景知识
+
+### 相关概念
+
+> 占位 - 待补充前置概念
+
+## 核心内容
+
+### 1. 六步换向 (Block Commutation)
 
 ### 原理
 ```
@@ -93,7 +112,7 @@ void bldc_commutate(BLDC_Sensorless *bldc) {
 }
 ```
 
-## 2. FOC (磁场定向控制)
+### 2. FOC (磁场定向控制)
 
 ### 坐标变换
 ```
@@ -329,7 +348,7 @@ void foc_update(FOC_Controller *foc, float theta, float vbus) {
 }
 ```
 
-## 3. MTPA 与弱磁控制
+### 3. MTPA 与弱磁控制
 
 ### MTPA (最大扭矩电流比)
 ```
@@ -359,8 +378,57 @@ id_fw = (vbus/√3 - sqrt(vd²+vq²)) / (ω·Ls)
 
 ---
 
-## 相关链接
+### 相关链接
 
 - [[bldc-motor|BLDC 电机]]
 - [[flight-controller-firmware|飞控]]
 - [[gimbal-control|云台]]
+
+## 实践示例
+
+### 示例代码
+
+```c
+// 占位 - 待补充示例代码
+```
+
+**代码说明**：
+- 待补充
+
+## 深入理解
+
+### 原理分析
+
+> 占位 - 待补充原理分析
+
+### 最佳实践
+
+1. 待补充
+
+## 常见问题
+
+### Q1: 待补充常见问题？
+
+**A**: 待补充答案。
+
+## 总结
+
+本文核心要点：
+
+- 待补充
+
+## 延伸阅读
+
+- 待补充相关文章链接
+
+## 参考资料
+
+1. 待补充
+
+---
+
+**练习题**：
+
+1. 待补充
+
+**下一步**：建议学习 [[/intermediate/|中级内容]]
